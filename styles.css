@@ -1,0 +1,58 @@
+
+.spacer-top{
+	padding-top:15px;
+}
+
+.nav-colour-et{
+	background-color:#212121;
+}
+
+.heading{
+	text-align:center;
+	padding-top:15px;
+
+}
+#para1 {
+    display: none;
+}
+#para2 {
+    display: none;
+}
+#para3 {
+    display: none;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 601px–768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	h1{
+		color:#2e7d32;
+		background-color:#d9ff99;
+	}
+	
+	p{
+		color:#a5d6a7;
+		background-color:pink;
+	}
+	
+
+}
+
+
+/* Large devices (desktops, 993px–1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	h1{
+		color:#2e7d32;
+		background-color:#a5d6a7;
+	}
+	
+	p{
+		color:#d9ff99;
+		background-color:pink;
+	}
+	
+	
+
+}
+
