@@ -115,7 +115,10 @@ body{
 	padding-top:15px;
 	color:#2e7d32;
 	background-color:#fff6a3;
-	
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
 
 }
 .solutions1 .heading3{
@@ -138,22 +141,31 @@ body{
 .solutions1 p{
 	background-color:#d9ff99;
 	color:#212121;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
 }
 
 .solutions1.tap-hint {
-  font-size: 50px  !important;
-  color: #2e7d32; /* your green */
+  font-size: 50px  ;
+  color: #2e7d32;
   font-weight: bold;
   animation: blink 1.5s infinite;
   margin-bottom: 10px;
   
 }
 
+
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0.2; }
   100% { opacity: 1; }
 }
+
+
 
 /*MOBILE VIEW*/
 @media (max-width: 760px){
