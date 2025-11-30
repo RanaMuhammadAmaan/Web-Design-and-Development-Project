@@ -1,0 +1,537 @@
+/*KUMAR SHETYE*/
+
+/*For Nav Bar*/
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    border-radius: 8px;
+}
+
+/*Home nav item*/
+.home_item {
+    color: white !important;
+}
+
+/* Fix dropdown auto-close on hover */
+.nav-item.dropdown:hover > a {
+    color: black !important;
+}
+
+/* Dropdown item hover background color */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #e0e0e0 !important;  /* stronger grey */              
+}
+
+/*DESKTOP VIEW*/
+/*Page 3 - Why Climate Action is Critical?*/
+.page3 h1{
+	text-align: center; /*This is to align the header to the center of the page, note that we use ".page3 h1" as I have wrapped everything within the body tag in a div to ensure that only the contents of page3 will be modified by the CSS*/
+}
+
+.page3 h2{				/*This is to align the second header to the center of the page*/
+	text-align: center;
+	font-size: 18px;
+}
+
+.page3 .image{			/*This is to set the dimensions of the image*/
+	width: 97%;
+	height: 50%;
+}
+
+.page3 .p1{				/*This is to make a box around the paragraph, setting the size and if the text overflows then a scroll bar will appear enabling the user to scroll through the paragraph within the box*/
+	border-style: solid;
+	width: 97%;
+	height: 50%;
+	font-size: 110%;
+	padding: 3%;
+	overflow-y: auto;
+}
+
+.page3 button{			/*This is to center the button*/
+	display: block;
+	margin: 0 auto;
+}
+
+.page3 .row{			/*This is to remove the vertical gap between rows*/
+	margin-bottom: -13%;
+}
+/*Page 4 - Effects of Climate Change*/
+.page4 h1{				/*Centering the first header*/
+	text-align: center;
+}
+
+.page4 h2{				/*Centering the second header*/
+	text-align: center;
+	font-size: 18px;
+}
+
+.page4 .image2{			/*Setting the dimensions for the image*/
+	height: 250px;
+	width: 86%;
+}
+
+.page4 .p2{				/*This is to make a box around the paragraph, setting the size and if the text overflows then a scroll bar will appear enabling the user to scroll through the paragraph within the box*/
+	border-style: solid;
+	width: 86%;
+	height: 250px;
+	margin: auto;
+	overflow-y: auto;
+	padding: 3%;
+}
+
+.page4 .btn{		/*To set the position of the button*/
+	padding-left: 42%;
+	padding-top: 14%;
+}
+
+.page4 .row {
+    margin-bottom: 2px; /* smaller vertical gap */
+}
+
+.page4 button{
+	display: block;
+	margin: 0 auto;
+}
+
+/*Amaan Work*/
+body{
+	background-color:#ffffff;
+}
+.solutions1 .spacer-top{
+	padding-top:15px;
+}
+
+.solutions1 .nav-colour-et{
+	background-color:#212121;
+}
+
+.solutions1 .heading{
+	text-align:center;
+	padding-top:15px;
+	color:#2e7d32;
+	background-color:#fff6a3;
+	
+
+}
+.solutions1 .heading3{
+	text-align:center;
+	padding-top:15px;
+	color:#ffffff;
+	background-color:#2e7d32;
+	
+
+}
+.solutions1 #para1 {
+    display: none;
+}
+.solutions1 #para2 {
+    display: none;
+}
+.solutions1 #para3 {
+    display: none;
+}
+.solutions1 p{
+	background-color:#d9ff99;
+	color:#212121;
+}
+
+.solutions1.tap-hint {
+  font-size: 50px  !important;
+  color: #2e7d32; /* your green */
+  font-weight: bold;
+  animation: blink 1.5s infinite;
+  margin-bottom: 10px;
+  
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+/*MOBILE VIEW*/
+@media (max-width: 760px){
+	/*Kumar Work*/
+	/*Page 3 - Why Climate Action is Critical?*/
+	.page3 .image{			/*Adjusts the size of the image*/
+	width: 100%;
+	height: 215px;
+	margin-bottom: 8%;
+	object-fit: cover;
+	}
+	.page3 .p1{				/*This is to make a box around the paragraph, setting the size and if the text overflows then a scroll bar will appear enabling the user to scroll through the paragraph within the box*/
+	border-style: solid;
+	width: 100%;
+	height: 215px;
+	font-size: 10px;
+	padding: 10px;
+	overflow-y: auto;
+	}
+	.page3 .row{		/* smaller vertical gap */
+		margin-bottom: 25px;
+	}
+ 
+ /*Rana Muhammad Amaan's Work*/
+ /* Small devices (portrait tablets and large phones, 601px–768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	
+
+.solutions1	h1{
+		color:#2e7d32;
+		background-color:#d9ff99;
+	}
+	
+.solutions1	p{
+		color:#a5d6a7;
+		background-color:pink;
+	}
+	
+
+}
+
+
+/* Large devices (desktops, 993px–1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+.solutions1	h1{
+		color:#2e7d32;
+		background-color:#a5d6a7;
+	}
+	
+.solutions1	p{
+		color:#d9ff99;
+		background-color:pink;
+	}	
+
+}
+
+@media (max-width: 768px) {
+
+    /* Base mobile layout: image left, text right */
+    .khant .pair-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left !important;
+        gap: 15px;
+    }
+
+    /* Reverse layout: text left, image right */
+    .khant .pair-block.reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* Image and text proportions */
+    .khant .pair-block img {
+        width: 60% !important;
+        height: auto;
+    }
+
+    .khant .pair-block p {
+        width: 55%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Reduce margin around whole block */
+    .khant .pair-block {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+/*For Page (2) (Causes Section)*/
+
+/*  Resizing images for desktop */
+.causes-img {
+    width: 450px;     
+    height: auto;
+}
+
+
+/* Resizing last image */
+.last-img {
+    height: 350px;
+    width: 100%;
+}
+
+/*Dhruv work*/
+.dhruv    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff6a3;
+    }
+.dhruv     header {
+      width: 100%;
+      background: #efefef;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border-bottom: 2px solid #000;
+    }
+.dhruv      header div {
+      width: 120px;
+      height: 12px;
+      background: #000;
+    }
+.dhruv      .hero-title {
+      width: 60%;
+      height: 25px;
+      background: #000;
+      margin: 40px auto;
+    }
+.dhruv      .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+.dhruv      .image-box {
+      width: 300px;
+      height: 180px;
+      background: #d3d3d3;
+      position: relative;
+      border: 2px solid #000;
+    }
+
+  .dhruv      content: "";
+      position: absolute;
+      width: 2px;
+      background: #000;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+    }
+ .dhruv     .image-box::after {
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 50%;
+    }
+  .dhruv    .dropdown-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+ .dhruv     .dropdown-box {
+      width: 250px;
+      border: 2px solid #000;
+      padding: 10px;
+    }
+ .dhruv     select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+    }
+ .dhruv     .text-block {
+      width: 60%;
+      height: 120px;
+      background: #000;
+      margin: 30px auto;
+    }
+ .dhruv     .side-image {
+      width: 250px;
+      height: 180px;
+      background: #d3d3d3;
+      border: 2px solid #000;
+      margin: 0 auto 40px auto;
+      position: relative;
+    }
+ .dhruv     .side-image::before,
+ .dhruv     .side-image::after {
+      content: "";
+      position: absolute;
+      background: #000;
+    }
+ .dhruv     .side-image::before {
+      width: 2px;
+      top: 0; bottom: 0;
+    }
+ .dhruv     .side-image::after {
+      height: 2px;
+      left: 0; right: 0;
+    }
+	@media (max-width: 768px) {
+.dhruv  	  .text-side-wrapper {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	  }
+.dhruv  	  .text-block,
+.dhruv    .side-image {
+		width: 90%;
+	  }
+.dhruv  	  .image-row {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	  }
+.dhruv  	  .image-box {
+		width: 90% !important;
+	  }
+.dhruv  	  .dropdown-section {
+		flex-direction: column;
+		align-items: center;
+	  }
+.dhruv  	  .dropdown-box {
+		width: 90%;
+	  }
+	}
+
+.dhruv  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.dhruv  .navbar-brand img {
+    border-radius: 10px;
+}
+
+.dhruv  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;                              
+    max-width: 500px;                        
+    margin: auto; 
+}
+
+.dhruv  .small-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dhruv  .dropdown-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dhruv  .dropdown-box {
+    width: 250px;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.dhruv  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.dhruv  .text-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.dhruv  .text-block {
+    width: 40%;
+}
+
+.dhruv  .side-img {
+    flex: 1;
+    max-width: 33%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* MEDIA QUERY FOR PHONES */
+@media (max-width: 768px) {
+  .dhruv    .text-image {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+  .dhruv    .text-block,
+   .dhruv   .side-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+   .dhruv   .image-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+   .dhruv   .dropdown-section {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+/*home*/
+.spacer-top{
+	padding-top:15px;
+}
+
+.nav-colour-et{
+	background-color:#212121;
+}
+
+.heading{
+	text-align:center;
+	padding-top:15px;
+
+}
+#para1 {
+    display: none;
+}
+#para2 {
+    display: none;
+}
+#para3 {
+    display: none;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 601px–768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	h1{
+		color:#2e7d32;
+		background-color:#d9ff99;
+	}
+	
+	p{
+		color:#a5d6a7;
+		background-color:pink;
+	}
+	
+
+}
+
+
+/* Large devices (desktops, 993px–1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	h1{
+		color:#2e7d32;
+		background-color:#a5d6a7;
+	}
+	
+	p{
+		color:#d9ff99;
+		background-color:pink;
+	}
+	
+}
+
+.banner_img{
+	max-width: 100%;
+}

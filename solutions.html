@@ -10,39 +10,77 @@
 		<!--Bootstrap link to css-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<!-- your css link comes after the bootstrap css links-->
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 
 	</head>
 	
 	<body>
-		<div class="container-fluid">
-			<!--nav-->
-				<!-- navbar-expand-lg is used for describing nav bar length form for desktop size -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-
-	  		<!-- container-fluid makes the screen width for nav bar so that those can be at the each edge side of the screen -->
-				<div class="container-fluid">
-
-	    		<!-- Title Text in nav bar -->
-					<a class="navbar-brand  align-items-center fw-bold" href="index.html">
-	      			<img src="logo.png" alt="Logo" width="70" height="70" class="me-3">
-				    Climate Action
+		<div class ="solutions1">
+		<!-- navbar-expand-lg is used for describing nav bar length form for desktop size -->
+			<nav class="navbar navbar-expand-lg bg-success" >
+				<div class="container">
+	  			<!-- Brand (TOPIC NAME) -->
+					<a class="navbar-brand fw-bold text-white" href="home.html">
+						<img src="logo.png" width="60px">
+			      Climate Action
 					</a>
 
-	      		<!-- hamburger menu for phone size -->
+			    <!-- Mobile Toggle (Hamburger Menu)-->
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 
-	      		<!-- nav link -->
-					<div  class="collapse navbar-collapse" id="mainNav">
+		    	<!-- nav link -->
+	      		<!-- collapse means div to be hidden on small screens -->
+					<div class="collapse navbar-collapse" id="mainNav">
 						<ul class="navbar-nav ms-auto">
-							<li ><a class="nav-link fw-bold" href="index.html">Home</a></li>
-							<li ><a class="nav-link fw-bold" href="understanding.html">Understanding</a></li>
-							<li><a class="nav-link fw-bold" href="why-action.html">Why Action?</a></li>
-							<li ><a class="nav-link fw-bold" href="solutions.html">Solutions</a></li>
-							<li ><a class="nav-link fw-bold" href="renewable.html">Renewable Energy</a></li>
+			    		<!-- Home -->
+
+							<li ><a class="nav-link fw-bold home_item" href="home.html">Home</a></li>
+
+				        <!-- UNDERSTANDING DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="understanding.html" data-bs-toggle="dropdown">
+				            Understanding
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="understanding.html">Understanding Climate Change</a></li>
+									<li><a class="dropdown-item" href="causes.html">Causes of Climate Change</a></li>
+								</ul>
+
+				        <!-- WHY ACTION DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="#" data-bs-toggle="dropdown">
+				            Why Action?
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="page3.html">Why Climate Action is Critical</a></li>
+									<li><a class="dropdown-item" href="page4.html">Effects of Climate Change</a></li>
+								</ul>
+							</li>
+
+				        <!-- SOLUTIONS DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="solutions.html" data-bs-toggle="dropdown">
+				            Solutions
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="solutions.html">Solutions & Actions</a></li>
+									<li><a class="dropdown-item" href="solutions2.html">Community & Local Actions</a></li>
+								</ul>
+							</li>
+
+				        <!-- RENEWABLE DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="#" data-bs-toggle="dropdown">
+				            Renewable Energy
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="webdev1.html">Renewable Energy & Technology</a></li>
+									<li><a class="dropdown-item" href="webdev2.html">Individual Actions</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -50,61 +88,61 @@
 
 
 			
-		<h1 class="heading">Solutions</h1>
-		<h3 class="heading">By Rana Muhammad Amaan</h3>
+			<h1 class="heading">Solutions & Actions</h1>
+			<h3 class="heading3">By Rana Muhammad Amaan</h3>
 				<!--First row -->
-		<div class="row spacer-top">
+			<div class="row spacer-top">
 				<!-- Col 1 -->
-			<div class="col-sm-4">
-				<img src="image1.webp" alt="coloured image" >	
-			</div>
+				<div class="col-sm-4">
+					<img src="Rana_image1.jpg" alt="coloured image" >	
+				</div>
 				<!-- Col 2 -->
-			<div class="col-sm-4">
-			<img src="image1.webp" alt="coloured image" >
-			</div>
+				<div class="col-sm-4">
+					<img src="Rana_image2.jpg" alt="coloured image" >
+				</div>
 				<!-- Col 3 -->
-			<div class="col-sm-4">
-			<img src="image1.webp" alt="coloured image" >
-			</div>			
+				<div class="col-sm-4">
+					<img src="Rana_image3.jpg" alt="coloured image" >
+				</div>			
 			
-		</div>
+			</div>
 		
 			<!--Second row -->	
-		<div class="row spacer-top">
+			<div class="row spacer-top">
 				
-			<p>Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.
+				<p>Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.
 
-			</p>
-		</div>
+				</p>
+			</div>
 		
 			<!--Third row -->
-		<div class="row spacer-top">
+			<div class="row spacer-top">
 				<!-- Col 1 -->
-			<div class="col-sm-4">
-				<img class="img-fluid" src="image1.webp" alt="coloured image" >
+				<div class="col-sm-4">
+					<img class="img-fluid" src="Rana_image4.jpg" alt="coloured image" >
 				
-			</div>
+				</div>
 				<!-- Col 2 -->
-			<div class="col-sm-4">
-				<img class="img-fluid" src="image1.webp" alt="coloured image" >
+				<div class="col-sm-4">
+					<img class="img-fluid" src="Rana_image5.jpg" alt="coloured image" >
 
-			</div>
+				</div>
 				<!-- Col 3 -->
-			<div class="col-sm-4">
-				<img class="img-fluid" src="image1.webp" alt="coloured image" >
+				<div class="col-sm-4">
+					<img class="img-fluid" src="Rana_image6.jpg" alt="coloured image" >
 
-			</div>
+				</div>
 				
 				
 			
-		</div>
+			</div>
 		
 			<!--Fourth row -->
-		<div class="row spacer-top">
+			<div class="row spacer-top">
 				
-			<p>Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.
-			</p>
-		</div>
+				<p>Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.Achieving ambitious sustainability goals requires tailored solutions that meet the unique challenges of your industry. At Arcadis, our expertise spans from strategic advisory and planning right through to on-the-ground project implementation, ensuring you achieve your net-zero goals and deliver long-term commercial success.
+				</p>
+			</div>
 			
 			
 		</div>
@@ -113,7 +151,7 @@
 	
 		<!-- script tag will be last thing before closing body tag-->
 	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+		
 	</body>
 
 </html>
