@@ -98,7 +98,7 @@
 	margin: 0 auto;
 }
 
-/*Amaan Work*/
+/* Rana Muhammad Amaan's Work*/
 body{
 	background-color:#ffffff;
 }
@@ -126,17 +126,37 @@ body{
 	padding-top:15px;
 	color:#ffffff;
 	background-color:#2e7d32;
-	
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
 
 }
 .solutions1 #para1 {
     display: none;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
+	
 }
 .solutions1 #para2 {
     display: none;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
 }
 .solutions1 #para3 {
     display: none;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
 }
 .solutions1 p{
 	background-color:#d9ff99;
@@ -157,8 +177,12 @@ body{
   margin-bottom: 10px;
   
 }
+.solutions1 a{
+	font-family:"Poppins",sans-serif;
+	font-weight:700;
+	font-style:normal;
 
-
+}
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0.2; }
