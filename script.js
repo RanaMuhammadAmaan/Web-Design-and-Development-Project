@@ -22,3 +22,58 @@ function toggleText3() {
     text.style.display = "block";
     hint.style.display = "none";
 }
+
+function validateForm() {
+			//const used when variable will not change and can assign a value on declaration
+            const fName = document.getElementById("fName").value;
+			const lName = document.getElementById("lName").value;
+            const gender = document.getElementById("gender");
+            const confirmation1 = document.getElementById("confirmation1").checked;
+            const confirmation2 = document.getElementById("confirmation2").checked;
+            
+
+            const firstNameError = document.getElementById("fNameError");
+            const secondNameError = document.getElementById("lNameError");
+            const genderErr = document.getElementById("genderError");
+            const confirm1Err = document.getElementById("confirmation1Error");
+            const confirm2Err = document.getElementById("confirmation2Error");
+            
+            firstNameError.textContent = "";
+            secondNameError.textContent = "";
+            genderErr.textContent = "";
+            confirm1Err.textContent = "";
+            confirm2Err.textContent = "";
+
+            let isValid = true;
+			//=== is strict equality, type must be the same. 77
+            if (fName === "") {
+                secondNameError.textContent = "Please enter your first name.";
+                isValid = false;
+            }
+            if (lName === "") {
+                firstNameError.textContent = "Please enter your Second name.";
+                isValid = false;
+            }
+            if (male=== "" && female=== "" && other=== "") {
+                genderErr.textContent = "Please enter your gender";
+                isValid = false;
+            }
+            if (confirmation1 === "" && confirmation2 === "") {
+                confirm1Err = "Please tock one of the options in checkbox";
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert("Form submitted successfully!");
+                return true;
+            } else {
+                return false; 
+            }
+        }
+
+        function resetErrors() {
+            document.getElementById("fNameError").textContent = "";
+            document.getElementById("lNameError").textContent = "";
+            document.getElementById("genderError").textContent = "";
+            document.getElementById("confirmation1Error").textContent = "";
+        }

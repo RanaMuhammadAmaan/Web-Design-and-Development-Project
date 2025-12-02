@@ -188,8 +188,19 @@ body{
   50% { opacity: 0.2; }
   100% { opacity: 1; }
 }
-
-
+.solutions1 #climateForm{
+	width: 100%;
+    max-width: 400px;   
+    margin: 0 auto;
+	padding: 20px;          /* space inside the form */
+    border: 2px solid #2e7d32;   /* green border */
+    border-radius: 10px;    /* rounded corners */
+    background-color: #ffffff; 	
+}
+.solutions1 button{
+	background-color:red;
+	text-align:center;
+}
 
 /*MOBILE VIEW*/
 @media (max-width: 760px){

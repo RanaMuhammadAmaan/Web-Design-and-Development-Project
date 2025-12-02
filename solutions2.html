@@ -134,12 +134,15 @@
 			</div>
 			
 			<h3 class="heading3">Lets Connect and Play your role!</h3>
-			
-			<form>
-				<label for="fname">First name:</label><br>
-				<input type="text" id="fname" name="fname"><br>
-				<label for="lname">Last name:</label><br>
-				<input type="text" id="lname" name="lname">
+			<!--<div class="d-flex justify-content-center">-->
+			<form id="climateForm" onsubmit="return validateForm();">
+				<label for="fname"><p>First name:</p></label><br>
+				<input type="text" id="fName" name="fName" placeholder="Enter your first Name"><br>
+				<span id="fNameError" class="errorMessage"></span>
+				<label for="lname"><p>Last name:</p></label><br>
+				<input type="text" id="lName" name="lName" placeholder="Enter your last Name">
+				<span id="lNameError" class="errorMessage"></span>
+				<div id="gender">
 				<p>Gender:</p>
 				<label for="male">Male</label>
 				<input type="radio" id="male" name="gender"><br>
@@ -147,16 +150,19 @@
 				<input type="radio" id="female" name="gender"><br>
 				<label for="Other">Other</label>
 				<input type="radio" id="other" name="gender">
-				
+				<span id="genderError" class="errorMessage"></span>
+				</div>
 				<p>Declaration:</p>
 				<input type="checkbox" id="confirmation1" name="confirmation1">
 				<label for="confirmation1"> I will Practice and Promote the benefits of Community and Local action towards Climate Action</label><br>
+				<span id="confirmation1Error" class="errorMessage"></span>
 				<input type="checkbox" id="confirmation2" name="confirmation2">
-				<label for="confirmation2"> I give consent to receive emails and notifications regarding actions to take for Climate Action</label><br>
+				<label for="confirmation2"> I give consent to receive emails and notifications regarding actions to take for Climate Action</label><br><br>
+				<span id="confirmation2Error" class="errorMessage"></span>
 				<button>submit</button>
 				
 			</form>
-			
+			<!--</div>-->
 		
 			
 		</div>
