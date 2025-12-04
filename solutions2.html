@@ -19,14 +19,14 @@
 		<script src="script.js" defer></script>
 	</head>
 	
-	<body>
+	<body class="myBody">
 		<div class="solutions1">
 		<!-- navbar-expand-lg is used for describing nav bar length form for desktop size -->
 	  	<nav class="navbar navbar-expand-lg bg-success" >
 	  		<div class="container">
 	  			<!-- Brand (TOPIC NAME) -->
 			    <a class="navbar-brand fw-bold text-white" href="home.html">
-			      <img src="logo.png" width="60px">
+			      <img src="logo.png" alt ="colorful image" width="60">
 			      Climate Action
 			    </a>
 
@@ -98,8 +98,8 @@
 		<!--First row -->
 		<div class="row spacer-top">
 			<div class="col-sm-6">
-				<div class="tap-hint">⬇ Tap the image ⬇</div>
-				<img class="img-fluid" src="Rana_image7.jpg" onclick="toggleText1()" alt="coloured image" />	
+				<div class="tap-hint">⬇ Tap the images ⬇</div>
+				<img class="img-fluid" src="Rana_image7.jpg" onclick="toggleText1()" alt="coloured image" >	
 			</div>
 				
 			<div class="col-sm-6">
@@ -134,32 +134,37 @@
 			</div>
 			
 			<h3 class="heading3">Lets Connect and Play your role!</h3>
-			<!--<div class="d-flex justify-content-center">-->
 			<form id="climateForm" onsubmit="return validateForm();">
-				<label for="fname"><p>First name:</p></label><br>
+				<label for="fName"><span class="labelText">First name:</span></label><br>
 				<input type="text" id="fName" name="fName" placeholder="Enter your first Name"><br>
 				<span id="fNameError" class="errorMessage"></span>
-				<label for="lname"><p>Last name:</p></label><br>
+				
+				<label for="lName"><span class="labelText">Last name:</span></label><br>
 				<input type="text" id="lName" name="lName" placeholder="Enter your last Name">
 				<span id="lNameError" class="errorMessage"></span>
+				
 				<div id="gender">
 				<p>Gender:</p>
 				<label for="male">Male</label>
 				<input type="radio" id="male" name="gender"><br>
 				<label for="female">Female</label>
 				<input type="radio" id="female" name="gender"><br>
-				<label for="Other">Other</label>
+				<label for="other">Other</label>
 				<input type="radio" id="other" name="gender">
 				<span id="genderError" class="errorMessage"></span>
 				</div>
+				
 				<p>Declaration:</p>
 				<input type="checkbox" id="confirmation1" name="confirmation1">
 				<label for="confirmation1"> I will Practice and Promote the benefits of Community and Local action towards Climate Action</label><br>
 				<span id="confirmation1Error" class="errorMessage"></span>
+				
 				<input type="checkbox" id="confirmation2" name="confirmation2">
-				<label for="confirmation2"> I give consent to receive emails and notifications regarding actions to take for Climate Action</label><br><br>
+				<label for="confirmation2">I give consent to receive emails and notifications regarding actions to take for Climate Action</label><br><br>
 				<span id="confirmation2Error" class="errorMessage"></span>
+				
 				<button>submit</button>
+				<button type="reset" onclick="resetErrors()">Reset</button>
 				
 			</form>
 			<!--</div>-->

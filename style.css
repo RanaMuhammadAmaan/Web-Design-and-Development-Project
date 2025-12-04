@@ -98,9 +98,8 @@
 	margin: 0 auto;
 }
 
-/* Rana Muhammad Amaan's Work*/
-body{
-	background-color:#ffffff;
+ .myBody{
+	background-color:#FDFFE5;
 }
 .solutions1 .spacer-top{
 	padding-top:15px;
@@ -169,7 +168,7 @@ body{
 	"wdth" 100;
 }
 
-.solutions1.tap-hint {
+.solutions1 .tap-hint {
   font-size: 50px  ;
   color: #2e7d32;
   font-weight: bold;
@@ -195,11 +194,30 @@ body{
 	padding: 20px;          /* space inside the form */
     border: 2px solid #2e7d32;   /* green border */
     border-radius: 10px;    /* rounded corners */
-    background-color: #ffffff; 	
+    background-color: #F0FAEB; 	
 }
 .solutions1 button{
 	background-color:red;
 	text-align:center;
+}
+
+.solutions1 .labelText{
+	background-color:#d9ff99;
+	color:#212121;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
+	
+	}
+.solutions1 .errorMessage {
+    display: block;       /* forces error text to appear on its own line */
+    color: red;           /* error color */
+    font-size: 14px;      /* readable size */
+    margin-top: 5px;      /* small space from input */
+    margin-bottom: 10px;  /* space before next element */
 }
 
 /*MOBILE VIEW*/

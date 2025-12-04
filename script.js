@@ -27,7 +27,7 @@ function validateForm() {
 			//const used when variable will not change and can assign a value on declaration
             const fName = document.getElementById("fName").value;
 			const lName = document.getElementById("lName").value;
-            const gender = document.getElementById("gender");
+			const genderSelected = document.querySelector('input[name="gender"]:checked');
             const confirmation1 = document.getElementById("confirmation1").checked;
             const confirmation2 = document.getElementById("confirmation2").checked;
             
@@ -47,24 +47,24 @@ function validateForm() {
             let isValid = true;
 			//=== is strict equality, type must be the same. 77
             if (fName === "") {
-                secondNameError.textContent = "Please enter your first name.";
+                firstNameError.textContent = "Please enter your first name.";
                 isValid = false;
             }
             if (lName === "") {
-                firstNameError.textContent = "Please enter your Second name.";
+                secondNameError.textContent = "Please enter your Second name.";
                 isValid = false;
             }
-            if (male=== "" && female=== "" && other=== "") {
+            if (!genderSelected) {
                 genderErr.textContent = "Please enter your gender";
                 isValid = false;
             }
-            if (confirmation1 === "" && confirmation2 === "") {
-                confirm1Err = "Please tock one of the options in checkbox";
+            if (!confirmation1 && !confirmation2) {
+                confirm1Err.textContent = "Please tick one of the options in checkbox";
                 isValid = false;
             }
             
             if (isValid) {
-                alert("Form submitted successfully!");
+                alert("Details submitted successfully :)");
                 return true;
             } else {
                 return false; 
