@@ -1,4 +1,4 @@
-
+//functions to make the text visible on image-click and remove the hint once image is clicked
 function toggleText1() {
     let text = document.getElementById("para1");
     let hint = document.querySelector(".tap-hint");
@@ -22,7 +22,7 @@ function toggleText3() {
     text.style.display = "block";
     hint.style.display = "none";
 }
-
+// Form validation
 function validateForm() {
 			//const used when variable will not change and can assign a value on declaration
             const fName = document.getElementById("fName").value;
@@ -37,15 +37,17 @@ function validateForm() {
             const genderErr = document.getElementById("genderError");
             const confirm1Err = document.getElementById("confirmation1Error");
             const confirm2Err = document.getElementById("confirmation2Error");
-            
+			
+            //initialising each error message with an empty string
             firstNameError.textContent = "";
             secondNameError.textContent = "";
             genderErr.textContent = "";
             confirm1Err.textContent = "";
             confirm2Err.textContent = "";
-
+			
+			//checking the validity for each form attribute
             let isValid = true;
-			//=== is strict equality, type must be the same. 77
+			//=== is strict equality, type must be the same.
             if (fName === "") {
                 firstNameError.textContent = "Please enter your first name.";
                 isValid = false;
@@ -70,7 +72,7 @@ function validateForm() {
                 return false; 
             }
         }
-
+		//reset all errors,clear the form
         function resetErrors() {
             document.getElementById("fNameError").textContent = "";
             document.getElementById("lNameError").textContent = "";

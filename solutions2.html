@@ -6,102 +6,109 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Rana Muhammad Amaan">
+		
 		<!--Bootstrap link to css-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		
+		<!-- Google Fonts link-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-		<!-- your css link comes after the bootstrap css links-->
+		
+		<!-- css link comes after the bootstrap css links-->
 		<link rel="stylesheet" href="style.css">
+		<!-- Javascript external file linked -->
 		<script src="script.js" defer></script>
 	</head>
 	
 	<body class="myBody">
 		<div class="solutions1">
 		<!-- navbar-expand-lg is used for describing nav bar length form for desktop size -->
-	  	<nav class="navbar navbar-expand-lg bg-success" >
-	  		<div class="container">
-	  			<!-- Brand (TOPIC NAME) -->
-			    <a class="navbar-brand fw-bold text-white" href="home.html">
-			      <img src="logo.png" alt ="colorful image" width="60">
+			<nav class="navbar navbar-expand-lg bg-success" >
+				<div class="container">
+					<!-- Brand (TOPIC NAME) -->
+					<a class="navbar-brand fw-bold text-white" href="home.html">
+					<img src="logo.png" alt ="colorful image" width="60">
 			      Climate Action
-			    </a>
+					</a>
 
-			    <!-- Mobile Toggle (Hamburger Menu)-->
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-			      <span class="navbar-toggler-icon"></span>
-			    </button>
+					<!-- Mobile Toggle (Hamburger Menu)-->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+					<span class="navbar-toggler-icon"></span>
+					</button>
 
-		    	<!-- nav link -->
-	      		<!-- collapse means div to be hidden on small screens -->
-			    <div class="collapse navbar-collapse" id="mainNav">
-			    	<ul class="navbar-nav ms-auto">
-			    		<!-- Home -->
+					<!-- nav link -->
+					<!-- collapse means div to be hidden on small screens -->
+					<div class="collapse navbar-collapse" id="mainNav">
+						<ul class="navbar-nav ms-auto">
+							<!-- Home -->
 
-			      		<li ><a class="nav-link fw-bold home_item" href="home.html">Home</a></li>
+							<li ><a class="nav-link fw-bold home_item" href="home.html">Home</a></li>
 
-				        <!-- UNDERSTANDING DROPDOWN -->
-				        <li class="nav-item dropdown">
-				        	<a class="nav-link dropdown-toggle fw-bold text-white" href="understanding.html" data-bs-toggle="dropdown">
+							<!-- UNDERSTANDING DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="understanding.html" data-bs-toggle="dropdown">
 				            Understanding
-				          	</a>
-				          	<ul class="dropdown-menu">
-				            	<li><a class="dropdown-item" href="understanding.html">Understanding Climate Change</a></li>
-				            	<li><a class="dropdown-item" href="causes.html">Causes of Climate Change</a></li>
-				          	</ul>
-				        </li>
+								</a>
+								<ul class="dropdown-menu">
+				            	<	li><a class="dropdown-item" href="understanding.html">Understanding Climate Change</a></li>
+									<li><a class="dropdown-item" href="causes.html">Causes of Climate Change</a></li>
+								</ul>
+							</li>
 
-				        <!-- WHY ACTION DROPDOWN -->
-				        <li class="nav-item dropdown">
-				        	<a class="nav-link dropdown-toggle fw-bold text-white" href="#" data-bs-toggle="dropdown">
-				            Why Action?
-				          	</a>
-				          	<ul class="dropdown-menu">
-				          		<li><a class="dropdown-item" href="page3.html">Why Climate Action is Critical</a></li>
-				            	<li><a class="dropdown-item" href="page4.html">Effects of Climate Change</a></li>
-				          	</ul>
-				        </li>
+							<!-- WHY ACTION DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="#" data-bs-toggle="dropdown">
+								Why Action?
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="caCritical.html">Why Climate Action is Critical</a></li>
+									<li><a class="dropdown-item" href="effects.html">Effects of Climate Change</a></li>
+								</ul>
+							</li>
 
-				        <!-- SOLUTIONS DROPDOWN -->
-				        <li class="nav-item dropdown">
-				          	<a class="nav-link dropdown-toggle fw-bold text-white" href="solutions.html" data-bs-toggle="dropdown">
-				            Solutions
-				          	</a>
-				          	<ul class="dropdown-menu">
-				            	<li><a class="dropdown-item" href="solutions.html">Solutions & Actions</a></li>
-				            	<li><a class="dropdown-item" href="solutions2.html">Community & Local Actions</a></li>
-				          	</ul>
-				        </li>
+							<!-- SOLUTIONS DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="solutions.html" data-bs-toggle="dropdown">
+								Solutions
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="solutions.html">Solutions & Actions</a></li>
+									<li><a class="dropdown-item" href="solutions2.html">Community & Local Actions</a></li>
+								</ul>
+							</li>
 
-				        <!-- RENEWABLE DROPDOWN -->
-				        <li class="nav-item dropdown">
-				          	<a class="nav-link dropdown-toggle fw-bold text-white" href="#" data-bs-toggle="dropdown">
-				            Renewable Energy
-				          	</a>
-				          	<ul class="dropdown-menu">
-				            	<li><a class="dropdown-item" href="webdev1.html">Renewable Energy & Technology</a></li>
-				            	<li><a class="dropdown-item" href="webdev2.html">Individual Actions</a></li>
-				          	</ul>
-				        </li>
-				    </ul>
-		    	</div>
-		  	</div>
-		</nav>
+							<!-- RENEWABLE DROPDOWN -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle fw-bold text-white" href="#" data-bs-toggle="dropdown">
+								Renewable Energy
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="webdev1.html">Renewable Energy & Technology</a></li>
+									<li><a class="dropdown-item" href="webdev2.html">Individual Actions</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
-			
+		<!--Headings of the page -->
 		<h1 class="heading">Community & Local Actions</h1>
 		<h3 class="heading3">By Rana Muhammad Amaan</h3>
 		
 		<!--First row -->
 		<div class="row spacer-top">
+			<!-- Col 1 -->
 			<div class="col-sm-6">
 				<div class="tap-hint">⬇ Tap the images ⬇</div>
 				<img class="img-fluid" src="Rana_image7.jpg" onclick="toggleText1()" alt="coloured image" >	
 			</div>
-				
+			
+			<!-- Col 2 -->
 			<div class="col-sm-6">
 				<p id="para1"> Local communities play a powerful role in driving climate action by raising awareness and encouraging responsible habits. Educational workshops, school programs, and neighborhood campaigns can help people understand the effects of climate change and the importance of reducing carbon footprints. When communities learn about energy conservation, waste reduction, recycling, and sustainable lifestyle choices, they become more motivated to take everyday actions that collectively make a big impact.</p>
 			</div>
@@ -118,10 +125,9 @@
 			<div class="col-sm-6">
 				<p id="para2"> Communities can also take direct action through local environmental projects. Tree-planting drives, community gardens, and clean-up events not only improve local air quality and biodiversity but also strengthen social bonds. Local councils and residents can work together to create green spaces, promote cycling and walking paths, and adopt renewable energy solutions like solar-powered streetlights. These small but meaningful initiatives help create healthier, greener, and more resilient neighborhoods.</p>
 			</div>
-				
-				
-			
+					
 		</div>
+		
 		<!--Third row -->
 		<div class="row spacer-top">
 			<!-- Col 1 -->
@@ -134,7 +140,10 @@
 			</div>
 			
 			<h3 class="heading3">Lets Connect and Play your role!</h3>
+			
+			<!-- HTML Form -->
 			<form id="climateForm" onsubmit="return validateForm();">
+				<!-- User input text boxes for names -->
 				<label for="fName"><span class="labelText">First name:</span></label><br>
 				<input type="text" id="fName" name="fName" placeholder="Enter your first Name"><br>
 				<span id="fNameError" class="errorMessage"></span>
@@ -145,6 +154,7 @@
 				
 				<div id="gender">
 				<p>Gender:</p>
+				<!-- Radio buttons -->
 				<label for="male">Male</label>
 				<input type="radio" id="male" name="gender"><br>
 				<label for="female">Female</label>
@@ -155,6 +165,7 @@
 				</div>
 				
 				<p>Declaration:</p>
+				<!-- Checkboxes -->
 				<input type="checkbox" id="confirmation1" name="confirmation1">
 				<label for="confirmation1"> I will Practice and Promote the benefits of Community and Local action towards Climate Action</label><br>
 				<span id="confirmation1Error" class="errorMessage"></span>
@@ -163,11 +174,12 @@
 				<label for="confirmation2">I give consent to receive emails and notifications regarding actions to take for Climate Action</label><br><br>
 				<span id="confirmation2Error" class="errorMessage"></span>
 				
+				<!-- buttons -->
 				<button>submit</button>
 				<button type="reset" onclick="resetErrors()">Reset</button>
 				
 			</form>
-			<!--</div>-->
+	
 		
 			
 		</div>
